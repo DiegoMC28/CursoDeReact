@@ -1,12 +1,11 @@
 //import logo from './logo.svg';
 import './App.css';
+import BarraMenu from './Componentes/BarraMenu/BarraMenu';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <button type="button" class="btn btn-danger">Danger</button>
-      </header>
+    <div className='fondoOscuro'>
+      <BarraMenu></BarraMenu>
     </div>
   );
 }
