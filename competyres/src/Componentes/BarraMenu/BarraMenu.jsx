@@ -7,10 +7,8 @@ function BarraMenu() {
   return (
     <Navbar bg="danger" variant='dark' expand="lg">
       <Container>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+          <Nav className='m-auto'>
+            <NavDropdown title="Coches"  >
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -21,7 +19,7 @@ function BarraMenu() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <NavDropdown title="Circuitos" >
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -32,7 +30,7 @@ function BarraMenu() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <NavDropdown title="Dropdown"  >
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -44,7 +42,6 @@ function BarraMenu() {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
