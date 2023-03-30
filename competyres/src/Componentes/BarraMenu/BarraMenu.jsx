@@ -7,41 +7,20 @@ function BarraMenu() {
   return (
     <Navbar bg="danger" variant='dark' expand="lg">
       <Container>
-          <Nav className='m-auto'>
-            <NavDropdown title="Coches"  >
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Circuitos" >
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Dropdown"  >
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
+        <Navbar.Brand href="#home">Competyres</Navbar.Brand>
+        <Nav className='m-auto'>
+          <Nav.Link href="#home">Iniciar Sesion</Nav.Link>
+          <Nav.Link href="#home">Registrarse</Nav.Link>
+          <Nav.Link href="#home">Coches</Nav.Link>
+          <Nav.Link href="#home">Circuitos</Nav.Link>
+          <NavDropdown title="Algo"  >
+            <NavDropdown.Item href="#action/3.1">Coches</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item href="#action/3.2">Circuitos</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item href="#action/3.3">Info</NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
       </Container>
     </Navbar>
   );
