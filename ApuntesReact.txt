@@ -1,0 +1,11 @@
+-Cambiar los div anidados en el proyecto por un helper que no se renderice(Son fragments)(clase 101)
+-Implementar Fragments(clase 102)
+-Los portals se utilizan para ventanas/componentes modales, por ejemplo que al suceder un error te salga el componente emergente.
+El portal hace que se renderice el componente donde tu quieres, si tener que move su codigo alli. Generalmente se busca que sea en el index en la carpeta 
+public para que se superponga a todo lo demas. Tambien vale para menus laterales y demas componentes modales. En definitiva se hace una superposicion real y no
+solo con los estilos.
+-Los Ref sirven para referenciar a las etiquetas hmtl,lo bueno que tiene es que te ahorra los useState ya que puedes acceder a cualquier propiedad
+de la etiqueta html y obtener su valor por ejemplo y verficar que este valor es como quieres. Ganas comodidad y ahorras codigo.
+-Si accedes a un componente del dom con los refs estos componentes se llaman componentes no controlados. Cuando usamos los estados y las propiedades
+estamos hablando de componentes controlados.
+-IMPORTANTE: Descargar el proyecto del profesor ya terminado para tener un ejemplo y poder probarlo y utilizarlo.
