@@ -8,4 +8,63 @@ solo con los estilos.
 de la etiqueta html y obtener su valor por ejemplo y verficar que este valor es como quieres. Ganas comodidad y ahorras codigo.
 -Si accedes a un componente del dom con los refs estos componentes se llaman componentes no controlados. Cuando usamos los estados y las propiedades
 estamos hablando de componentes controlados.
--IMPORTANTE: Descargar el proyecto del profesor ya terminado para tener un ejemplo y poder probarlo y utilizarlo.
+-IMPORTANTE: Descargar el proyecto del profesor ya terminado para tener un ejemplo y poder probarlo y utilizarlo.(Tema 9)
+
+TEMA 10
+-useEffect sirve para comprobar y mantener el estado de tus componentes al recargar y al cambiar
+el valor de estos ademas de poder validar de forma reactiva. useEffect se ejecuta cuando alguna de las 
+dependencias que introducimos cambia su valor.
+-useEffect es para acciones secundarias(algunas acciones del usuario tambien son acciones
+secundarias) que sobre todo se utiliza para el from mas que para las peticiones
+http. En resumen, siempre que tengamos una accion que deba ejecutarse en respuesta de otra accion,
+eso es un side efect(efecto secundario) y ahi es donde utilizamos useEffect.
+-Importante hacer limpieza con el setTiemout poniendole un return al useEffect con un cleartimeout
+para que solo se ejecute una vez la funcion que lleva dentro
+-Si ponemos una matriz vacia coomo depedencia useEffect solo se ejecutara una vez al principio, si no 
+ponemos nada o ponemos alguan dependencia se ejecutara mientras cambia el valor del componente en el
+que este.
+
+-useReducer es mas potente que useState pero no siempre hay que utilizarlo, es mejor utilizar useState
+por que es mas simple y utilizar useReducer cuando valga la pena.
+-Podemos usar useReducer para juntar dos useState, como por ejemplo juntar un useState de email con 
+otro que valide este email.
+
+-Es bueno para la optimizacion de codgo utiizar una variables con alias para que uan vez
+la validacion sea correcta deje de validarse y tener un codigo mas optimo.(punto 08)
+-Es destructuracion de objetos
+-Se usa useReducer cuando tiene varios useState que empiezan a depender unos de otros y se vuelve
+engorroso, con useReducer te ahorras todo eso y lo juntas.
+-El useState es nuestra herramienta basica y normalmente solo necesitaremos eso y es muy bueno 
+para estados idependientes o datos independientes, faciles o simples.
+-El useReducer se utiliza cuando tienes un estado mas complejo y necesitas mas potencia por que
+la logica de ese estado se vuelve mas enrevesada y compleja pudiendo tener toda esa logica en 
+una funcion reducida fuera de la funcion del componente, aislada. Tambien lo utilizamos cuando
+tenemos varios useState relacionados y podemos unirlos mediante un useReducer, por ejemplo cuando 
+tienes un estado con el email y otro estado que lo valida, ahi usas useReducer para unificarlo en 
+uno solo. Es mas elegante pero hay que saber cuando usarlo.
+-Es importante combinar el useReducer con useEffect, esto hace a la aplicacion mas optima y elegante.
+
+-React context es la solucion para evitar el reenvio de informacion de un componente a otro, este esta en 
+una escena secundaria a nuestro codigo. Le podemos mandar la informacion y el la reenvia al componente
+que queramos.
+-Se crea en una carpeta llamada context o store.
+-Se pueden usar uno o varios contextos en nuestra app para diferentes cosas.
+-El context es un objeto que contendra un componente. Mirar ejemplos de codigo.
+-Debemos envolver los componentes con la etiqueta del context provider si queremos que se pueda 
+utilizar ahi, si dejas fuera a un componente el context no funcionara ahi, 
+todo depende donde quieras utilizarlo.
+-El los componentes donde queramos utilizarlo debemos poner un contex consumer.
+-Asi podemos ahorrarnos los props, mirar bien los ejemplos de codigo del tema 10.
+-El contex va a pasar el valor de la propiedad que queramos a todos sus hijos
+cuando cambie el valor de esta.
+-Se puede usar un hook de react para el context, siendo mas comodo y elegante de utilizar, useContext, 
+de esta forma nos ahorramos el consume.
+-Mirar ejemplos de codigo.
+-Podemos hacer un context dinamico donde tambien podemos pasar funciones a parte de datos.
+-Los props estan bien para pasar cosas, no siempre hay que utilizar el context.
+-El context se utilizaria cuando tenemos que reenviar algo a traves de muchos componentes. Generalmente
+utilizaremos props para nuestros componentes y su configuracion basica, si se nos lia y 
+tenemos que reenviar demasiado utilizamos context. Y para las funciones se pueden pasar por 
+context cuando hagan algo my especifico, cuando te hace falta para algo mas mejor utilizar props.
+-
+
