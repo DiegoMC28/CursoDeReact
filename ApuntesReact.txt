@@ -66,5 +66,14 @@ de esta forma nos ahorramos el consume.
 utilizaremos props para nuestros componentes y su configuracion basica, si se nos lia y 
 tenemos que reenviar demasiado utilizamos context. Y para las funciones se pueden pasar por 
 context cuando hagan algo my especifico, cuando te hace falta para algo mas mejor utilizar props.
--
+-Con el context se puede meter toda la logica de un componente ahi y tenerlo desde fuera y no mezclado con la parte visual.
+-Para conectar el interior con el exteriro de un componente utilizar forwardRef y useImperativeHandler, esto se debe evitar siempre que se pueda
+pero para algunos casos especiales es necesario.
+
+TEMA 14
+-Mirar los ejemplos de codigo y cogerlos como ejemplo para nuestra TFG.
+-el hook importante para usar useEffect con llamadas http es useCallbac mirar bien el ejemplo.
+-Poner el useCallBAck hace que no entre en un bucle infinito
+-Mirar los ejemplos codigo del curso.
+
 
