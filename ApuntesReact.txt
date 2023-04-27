@@ -76,4 +76,12 @@ TEMA 14
 -Poner el useCallBAck hace que no entre en un bucle infinito
 -Mirar los ejemplos codigo del curso.
 
+TEMA 15
+-Los hooks personalizados sirven para reutilizar la logica, 
+como se hace con una funcion, son reutilizables
+-Mirar ejemplos de codigo
+
+TEMA 16
+-Mirar ejemplo de codigo y preguntar a alguien sobre lo visto.
+
 
